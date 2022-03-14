@@ -4,6 +4,7 @@ btnOddEven = document.getElementById("oddeven");
 btnPal.addEventListener("click", function () {
 
     var str = prompt("Inserire una parola");
+    str = str.split(' ').join('');
 
     function palindrome(strReverse) {
         strReverse = str.split('').reverse().join('');
